@@ -48,7 +48,7 @@ def xor_decrypt(ciphertext: bytes, keystream: bytes) -> str:
 
 # ===== Demo =====
 plaintext = input("Enter plaintext: ")
-key_str = input("Enter 4-bit key (e.g., 1110): ")
+key_str = input("Enter 4-bit key (e.g., 1110, except 0000): ")
 
 # Convert key to integer
 initial_state = int(key_str, 2)
